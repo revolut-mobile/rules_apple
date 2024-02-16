@@ -384,8 +384,6 @@ def _should_emit_swiftinterface(settings, is_xcframework = False):
     """
 
     # Do not emit swiftinterface file when library evolution is disabled for a given build
-    #
-    # To be removed when rules
     if settings[build_settings_labels.no_library_evolution]:
         return False
 
